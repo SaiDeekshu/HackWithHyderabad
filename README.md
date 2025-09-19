@@ -64,9 +64,11 @@ npm install -g live-server
 npm start
 
 
----
+`---`
 
-## 📈 Future Enhancements
+## 📈 **Future Enhancements**
+
+The following features are planned for future versions of this project:
 
 - 🗄️ Database integration for scenario storage
 - 🤝 Team collaboration features
@@ -75,4 +77,5 @@ npm start
 - 🌍 Multi-currency support
 - 📊 Improved reporting & analytics
 - ⚡ Performance optimizations
+
 
