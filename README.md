@@ -67,13 +67,14 @@ npm start
 
 The following features are planned for future versions of this project:
 
-🗄️- Database integration for scenario storage
-🤝- Team collaboration features
-🔮- Advanced forecasting models
-💻- Integration with accounting software
-🌍- Multi-currency support
-📊- Improved reporting & analytics
-⚡- Performance optimizations
+- 🗄️ Database integration for scenario storage  
+- 🤝 Team collaboration features  
+- 🔮 Advanced forecasting models  
+- 💻 Integration with accounting software  
+- 🌍 Multi-currency support  
+- 📊 Improved reporting & analytics  
+- ⚡ Performance optimizations
+
 
 
 
