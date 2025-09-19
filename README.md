@@ -33,8 +33,19 @@ A financial planning tool that helps startups and businesses simulate budget sce
 
 ---
 
+
 ## 📊 **Key Metrics Calculated**
 1. **Runway**: How long your cash will last at current burn rate  
 2. **Monthly Burn Rate**: Total monthly expenses minus revenue  
 3. **Break-even Point**: Time to profitability  
-4. **Profit Margin**: Revenue efficiency percentage  
+4. **Profit Margin**: Revenue efficiency percentage
+   
+---
+
+#  **screenshots**
+
+![Dashboard Preview](images/622aabeaea8e44ad9dc4cb584a4fc126.jpg)
+![Features Overview](images/9906d0334f3742f5a030cf05e50b3abf.jpg)
+![Advanced Features](images/fdd1fb5ec3b1441a8a74855dec4f4102.jpg)
+![Use Cases](images/73886ee3384348a78d1aeb492c7b525f.jpg)
+![Tech Stack](images/fdeff4059a144a5083a35e9908659fb7.jpg)
