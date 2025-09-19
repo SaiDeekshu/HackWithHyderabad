@@ -44,8 +44,35 @@ A financial planning tool that helps startups and businesses simulate budget sce
 
 #  **screenshots**
 
-![Dashboard Preview](images/622aabeaea8e44ad9dc4cb584a4fc126.jpg)
-![Features Overview](images/9906d0334f3742f5a030cf05e50b3abf.jpg)
-![Advanced Features](images/fdd1fb5ec3b1441a8a74855dec4f4102.jpg)
-![Use Cases](images/73886ee3384348a78d1aeb492c7b525f.jpg)
+![Dashboard Preview](images/622aabeaea8e44ad9dc4cb584a4fc126.jpg)  
+![Features Overview](images/9906d0334f3742f5a030cf05e50b3abf.jpg)  
+![Advanced Features](images/fdd1fb5ec3b1441a8a74855dec4f4102.jpg)  
+![Advanced Features](images/WhatsApp Image 2025-09-19 at 18.09.59_104f2c01.jpg)  
+![Use Cases](images/73886ee3384348a78d1aeb492c7b525f.jpg)  
 ![Tech Stack](images/fdeff4059a144a5083a35e9908659fb7.jpg)
+
+
+---
+
+## ⚡ How to Run
+
+Live Server (recommended)
+
+```bash
+git clone https://github.com/your-username/cfo-helper.git
+npm install -g live-server
+npm start
+
+
+---
+
+## 📈 Future Enhancements
+
+- 🗄️ Database integration for scenario storage
+- 🤝 Team collaboration features
+- 🔮 Advanced forecasting models
+- 💻 Integration with accounting software
+- 🌍 Multi-currency support
+- 📊 Improved reporting & analytics
+- ⚡ Performance optimizations
+
