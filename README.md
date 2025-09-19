@@ -10,7 +10,7 @@ A financial planning tool that helps startups and businesses simulate budget sce
 - **Interactive Sliders**: Adjust spending, hiring, pricing, and marketing budgets in real-time  
 - **Financial Forecasting**: Get instant runway, burn rate, and profit margin calculations  
 - **Visual Charts**: 6-month forecast with cash balance, revenue, and expense projections  
-- **Scenario Simulation**: Test "what-if" scenarios with immediate feedback  
+- **Scenario Simulation**: Test "what-if" scenarios with immediate feedback
 
 ### 🔹 **Advanced Features**
 - **PDF Report Export**: Generate professional reports with scenario details and insights  
