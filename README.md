@@ -54,28 +54,5 @@ A financial planning tool that helps startups and businesses simulate budget sce
 
 ---
 
-## ⚡ How to Run
-
-Live Server (recommended)
-
-```bash
-git clone https://github.com/your-username/cfo-helper.git
-npm install -g live-server
-npm start
-
-
-`---`
-
-## 📈 **Future Enhancements**
-
-The following features are planned for future versions of this project:
-
-- 🗄️ Database integration for scenario storage
-- 🤝 Team collaboration features
-- 🔮 Advanced forecasting models
-- 💻 Integration with accounting software
-- 🌍 Multi-currency support
-- 📊 Improved reporting & analytics
-- ⚡ Performance optimizations
 
 
