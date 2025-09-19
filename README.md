@@ -15,7 +15,7 @@ A financial planning tool that helps startups and businesses simulate budget sce
 ### 🔹 **Advanced Features**
 - **PDF Report Export**: Generate professional reports with scenario details and insights  
 - **Scenario Sharing**: Share scenarios via clipboard or native sharing  
-- **Usage Tracking**: Monitor simulation and export counts  
+- **Usage Tracking**: Monitor simulation and export counts.
 
 ---
 
