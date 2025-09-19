@@ -1,9 +1,9 @@
-💰 CFO Helper Agent
+💰 **CFO Helper Agent**
 
 A financial planning tool that helps startups and businesses simulate budget scenarios and forecast outcomes with interactive charts and AI-powered insights.
 
-🚀 Features
-Core Functionality
+🚀 **Features**
+🔹**Core Functionality**
 
 Interactive Sliders: Adjust spending, hiring, pricing, and marketing budgets in real-time
 
@@ -13,36 +13,36 @@ Visual Charts: 6-month forecast with cash balance, revenue, and expense projecti
 
 Scenario Simulation: Test "what-if" scenarios with immediate feedback
 
-Advanced Features
+🔹 **Advanced Features**
 
 PDF Report Export: Generate professional reports with scenario details and insights
 
-Scenario Sharing: Share scenarios via clipboard or native sharing
+**Scenario Sharing**: Share scenarios via clipboard or native sharing
 
-Usage Tracking: Monitor simulation and export counts
+**Usage Tracking**: Monitor simulation and export counts
 
-🎯 Use Cases
+🎯 **Use Cases**
 
-Startup Founders: "If I hire 2 more engineers, can I survive 6 months?"
+**Startup Founders**: "If I hire 2 more engineers, can I survive 6 months?"
 
-Event Organizers: "If we spend ₹10,000 extra on marketing, what's left for prizes?"
+**Event Organizers**: "If we spend ₹10,000 extra on marketing, what's left for prizes?"
 
-Business Owners: "If I increase product price by 10%, what happens to profit?"
+**Business Owners**: "If I increase product price by 10%, what happens to profit?"
 
-🛠 Technical Stack
+🛠 **Technical Stack**
 
-Frontend: HTML5, CSS3 (Grid/Flexbox), Vanilla JavaScript
+**Frontend**: HTML5, CSS3 (Grid/Flexbox), Vanilla JavaScript
 
-Visualization: Chart.js for interactive charts
+**Visualization**: Chart.js for interactive charts
 
-PDF Generation: jsPDF for report exports
+**PDF Generation**: jsPDF for report exports
 
-📊 Key Metrics Calculated
+📊 **Key Metrics Calculated**
 
-Runway: How long your cash will last at current burn rate
+**Runway**: How long your cash will last at current burn rate
 
-Monthly Burn Rate: Total monthly expenses minus revenue
+**Monthly Burn Rate**: Total monthly expenses minus revenue
 
-Break-even Point: Time to profitability
+**Break-even Point**: Time to profitability
 
-Profit Margin: Revenue efficiency percentage
+**Profit Margin**: Revenue efficiency percentage
