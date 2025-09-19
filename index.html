@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CFO Helper Agent</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>� CFO Helper Agent 👑</h1>
+            <p>Royal Financial Simulation & Strategic Forecasting</p>
+            <div class="usage-counter">
+                <span>Scenarios Tested: <strong id="scenarioCount">0</strong></span>
+                <span>Reports Exported: <strong id="reportCount">0</strong></span>
+            </div>
+        </header>
+
+        <div class="main-content">
+            <!-- Control Panel -->
+            <div class="control-panel">
+                <h2>🎛️ Scenario Controls</h2>
+                
+                <div class="control-group">
+                    <label for="monthlySpending">💰 Monthly Spending (₹)</label>
+                    <input type="range" id="monthlySpending" min="10000" max="100000" value="30000" step="1000">
+                    <span class="value" id="spendingValue">₹30,000</span>
+                </div>
+
+                <div class="control-group">
+                    <label for="engineers">👥 Number of Engineers</label>
+                    <input type="range" id="engineers" min="1" max="10" value="3" step="1">
+                    <span class="value" id="engineersValue">3</span>
+                </div>
+
+                <div class="control-group">
+                    <label for="productPrice">💵 Product Price (₹)</label>
+                    <input type="range" id="productPrice" min="100" max="1000" value="500" step="10">
+                    <span class="value" id="priceValue">₹500</span>
+                </div>
+
+                <div class="control-group">
+                    <label for="marketingSpend">🎯 Marketing Spend (₹)</label>
+                    <input type="range" id="marketingSpend" min="5000" max="50000" value="15000" step="1000">
+                    <span class="value" id="marketingValue">₹15,000</span>
+                </div>
+
+                <div class="control-group">
+                    <label for="currentCash">🏦 Current Cash (₹)</label>
+                    <input type="range" id="currentCash" min="100000" max="1000000" value="500000" step="10000">
+                    <span class="value" id="cashValue">₹5,00,000</span>
+                </div>
+
+                <button id="simulateBtn" class="simulate-btn">🔮 Run Simulation</button>
+                <button id="refreshDataBtn" class="refresh-btn">🔄 Refresh Live Data</button>
+            </div>
+
+            <!-- Results Panel -->
+            <div class="results-panel">
+                <h2>📊 Forecast Results</h2>
+                
+                <div class="metrics">
+                    <div class="metric-card">
+                        <h3>⏱️ Runway</h3>
+                        <p id="runway" class="metric-value">-</p>
+                    </div>
+                    <div class="metric-card">
+                        <h3>💸 Monthly Burn Rate</h3>
+                        <p id="burnRate" class="metric-value">-</p>
+                    </div>
+                    <div class="metric-card">
+                        <h3>⚖️ Break-even Point</h3>
+                        <p id="breakEven" class="metric-value">-</p>
+                    </div>
+                    <div class="metric-card">
+                        <h3>📈 Profit Margin</h3>
+                        <p id="profitMargin" class="metric-value">-</p>
+                    </div>
+                </div>
+
+                <div class="chart-container">
+                    <canvas id="forecastChart"></canvas>
+                </div>
+
+                <div class="action-buttons">
+                    <button id="exportBtn" class="export-btn">📄 Export Report</button>
+                    <button id="shareBtn" class="share-btn">🔗 Share Scenario</button>
+                    <button id="chatbotBtn" class="chatbot-btn">🤖 Ask AI Assistant</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- AI Chatbot Panel -->
+        <div class="chatbot-panel" id="chatbotPanel">
+            <div class="chatbot-header">
+                <h3>🤖 CFO AI Assistant</h3>
+                <button id="closeChatbot" class="close-chatbot">✖</button>
+            </div>
+            <div class="chatbot-messages" id="chatbotMessages">
+                <div class="ai-message">
+                    <div class="message-avatar">🤖</div>
+                    <div class="message-content">
+                        <p>Hello! I'm your CFO AI Assistant. I can help you with:</p>
+                        <ul>
+                            <li>💰 Financial analysis and insights</li>
+                            <li>📊 Scenario interpretations</li>
+                            <li>🎯 Strategic recommendations</li>
+                            <li>❓ Business finance questions</li>
+                        </ul>
+                        <p>Ask me anything about your financial projections!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="chatbot-input-area">
+                <div class="quick-questions">
+                    <button class="quick-btn" data-question="What does my current runway mean?">📊 Runway Analysis</button>
+                    <button class="quick-btn" data-question="Should I hire more engineers right now?">👥 Hiring Advice</button>
+                    <button class="quick-btn" data-question="How can I improve my cash flow?">💡 Cash Flow Tips</button>
+                    <button class="quick-btn" data-question="Is my current pricing strategy optimal?">� Pricing Review</button>
+                </div>
+                <div class="chatbot-input">
+                    <input type="text" id="chatInput" placeholder="Ask your CFO AI anything..." maxlength="200">
+                    <button id="sendMessage">Send</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Live Data Panel -->
+        <div class="live-data-panel">
+            <h3>📡 Live Data Updates (via Pathway API)</h3>
+            <div class="api-status">
+                <span class="status-indicator" id="apiStatus">🟢 Connected to Pathway API</span>
+                <span class="flexprice-status" id="flexpriceStatus">💳 Flexprice Billing Active</span>
+            </div>
+            <div class="data-updates" id="dataUpdates">
+                <p>Connecting to live data stream...</p>
+            </div>
+            <div class="billing-info">
+                <h4>💳 Real-time Billing (Flexprice API)</h4>
+                <p>Scenario simulations: ₹<span id="scenarioCost">0</span></p>
+                <p>Report exports: ₹<span id="exportCost">0</span></p>
+                <p><strong>Total: ₹<span id="totalCost">0</span></strong></p>
+                <small class="api-info">Billed in real-time via Flexprice API</small>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
