@@ -1,6 +1,7 @@
 # 💰 **CFO Helper Agent**
 
-A financial planning tool that helps startups and businesses simulate budget scenarios and forecast outcomes with interactive charts and AI-powered insights.
+A financial planning tool that helps startups and businesses simulate budget scenarios and forecast outcomes with interactive charts and AI-powered insights..
+- **PDF Report Export**: Generate professional reports with scenario details and insights  
 
 ---
 
@@ -13,7 +14,6 @@ A financial planning tool that helps startups and businesses simulate budget sce
 - **Scenario Simulation**: Test "what-if" scenarios with immediate feedback
 
 ### 🔹 **Advanced Features**
-- **PDF Report Export**: Generate professional reports with scenario details and insights  
 - **Scenario Sharing**: Share scenarios via clipboard or native sharing  
 - **Usage Tracking**: Monitor simulation and export counts.
 
